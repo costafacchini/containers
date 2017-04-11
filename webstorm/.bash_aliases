@@ -1,0 +1,1 @@
+alias webstorm="docker start webstorm || docker run -d --net host -it --add-host db:127.0.0.1 -v /etc/localtime:/etc/localtime -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.WebStorm2016.1:/root/.WebStorm2016.1 -v ~/Documents/Projects:/Projects -e DISPLAY=unix$DISPLAY -e LANG=C.UTF-8 --name webstorm webstorm"

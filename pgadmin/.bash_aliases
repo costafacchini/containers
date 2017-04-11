@@ -1,0 +1,1 @@
+alias pgadmin="docker start pgadmin || docker run -d -it --net host -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.pgadmin:/root/HostData -v $HOME/backups:/root/backups -e DISPLAY=unix$DISPLAY --name pgadmin pgadmin"
