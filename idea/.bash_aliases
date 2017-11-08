@@ -1,0 +1,1 @@
+alias intelij="docker start intelij || docker run -d --log-driver=none --net host -it --add-host db:127.0.0.1 -v /etc/localtime:/etc/localtime -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.IntelliJIDEA2016.1:/root/.IntelliJIDEA2016.1 -v ~/projects:/Projects -e DISPLAY=unix$DISPLAY -e LANG=C.UTF-8 --name intelij intelij"
